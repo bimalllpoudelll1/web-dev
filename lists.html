@@ -1,25 +1,35 @@
 <html>
     <head>
         <title>my lists</title>
+        <style>
+            ul.custom{
+                list-style: square inside;
+                
+            }
+            ol.custom{
+                list-style: lower-roman outside;
+                
+            }
+        </style>
     </head>
     <body>
         <!-- lists in html -->
           order lists
-         <ol type="A">
+         <ol class="custom" type="A">
             <li>Bimal</li>
             <li>Shyam</li>
              <li>Hari</li>
          </ol>
 
          unorder lists
-         <ul>
+         <ul class="custom">
             <li>mango</li>
             <li>apple</li>
             <li>piness</li>
          </ul>
 
          defination lists
-         <dl>
+         <dl class="custom">
             <dt>HTML</dt>
             <dd>is a webpage</dd>
          </dl>
