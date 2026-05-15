@@ -1,0 +1,70 @@
+ <html>
+    <head>
+        <style>
+            label{
+                border-style: dashed;
+            }
+           body{
+                text-align: center;
+                background-image: url("IMG-20260411-WA0001.jpg"),url("IMG-20260411-WA0001.jpg"),url("IMG-20260411-WA0001.jpg");
+                background-size: cover;     
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1vh; 
+           }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="color: red;">CV Form</h1>
+        <form action="submit.php" method="get">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <br><br>
+            <label for="psd">Password</label>
+            <input type="password" name="psd" id="psd" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" >
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" checked>
+            <label for="female">Female</label>
+            <br><br>
+            <label>Hobbies:</label>
+            <input type="checkbox" name="Hobbies" id="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" name="Hobbies" id="music">
+            <label for="music">Musics</label>
+            <input type="checkbox" name="Hobbies" id="Reading" disabled>
+            <label for="Reading">Reading(disabled)</label>
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+            <br><br>
+            <label for="quantity">Weight: </label>
+            <input type="number" id="quantity" name="quantity" min="1" max="100">
+            <br><br>
+            <label for="image">Upload pic</label>
+            <input type="file" name="image" id="image">
+            <br><br>
+            <label for="phone">Phone number:</label>
+            <input type="number" id="phone" name="phone" placeholder="eg.+977 9826996337">
+            <br>
+            <br>
+            <label for="messege">Messege:</label>
+            <textarea name="messege" id="messege" rows="1" cols="20"></textarea>
+            <br><br>
+            <label for="country">Choose the country:</label>
+            <select name="country" id="country">
+                <option value="usa">USA</option>
+                <option value="nepal">Nepal</option>
+                <option value="india">India</option>
+            </select>
+            <br><br>
+            <input type="submit" value="submit ">
+        </form>
+    </body>
+</html>
